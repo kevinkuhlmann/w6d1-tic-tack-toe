@@ -24,54 +24,77 @@ $(document).ready(function() {
     turn ++;
 
     $(this).off('click')
-    checkWinner()
- });
 
+    checkWinner();
 
+  });
 
 });
+
+var resetBoard = function(){
+  turn = 1;
+  $('td').empty();
+}
 
 
 
 var checkWinner = function() {
  // Horizontal X Winner
  if ( ($('#1').text() === "X" && $('#2').text() === "X") && ($('#3').text() === "X") ){
-  alert("X if the WINNER!");
+  alert("X is the WINNER!");
+  resetBoard();
   } else if ( ($('#4').text() === "X" && $('#5').text() === "X") && ($('#6').text() === "X") ){
-    alert("X if the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
   } else if ( ($('#7').text() === "X" && $('#8').text() === "X") && ($('#9').text() === "X") ){
-    alert("X if the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
 // Vertical X Winner
   } else if ( ($('#1').text() === "X" && $('#4').text() === "X") && ($('#7').text() === "X") ){
-    alert("X if the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
   } else if ( ($('#2').text() === "X" && $('#5').text() === "X") && ($('#8').text() === "X") ){
-    alert("X if the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
   } else if ( ($('#3').text() === "X" && $('#6').text() === "X") && ($('#9').text() === "X") ){
-    alert("X if the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
 // Diagonal X Winner
   } else if ( ($('#1').text() === "X" && $('#5').text() === "X") && ($('#9').text() === "X") ){
-    alert("X if the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
   } else if ( ($('#3').text() === "X" && $('#5').text() === "X") && ($('#7').text() === "X") ){
-    alert("X Yf the WINNER!");
+    alert("X is the WINNER!");
+   resetBoard();
 
- // Horizontal Y Winner
-  } else if ( ($('#1').text() === "Y" && $('#2').text() === "Y") && ($('#3').text() === "Y") ){
-    alert("Y if the WINNER!");
-  } else if ( ($('#4').text() === "Y" && $('#5').text() === "Y") && ($('#6').text() === "Y") ){
-    alert("Y if the WINNER!");
-  } else if ( ($('#7').text() === "Y" && $('#8').text() === "Y") && ($('#9').text() === "Y") ){
-    alert("Y if the WINNER!");
-// Vertical Y Winner
-  } else if ( ($('#1').text() === "Y" && $('#4').text() === "Y") && ($('#7').text() === "Y") ){
-    alert("Y if the WINNER!");
-  } else if ( ($('#2').text() === "Y" && $('#5').text() === "Y") && ($('#8').text() === "Y") ){
-    alert("Y if the WINNER!");
-  } else if ( ($('#3').text() === "Y" && $('#6').text() === "Y") && ($('#9').text() === "Y") ){
-    alert("Y if the WINNER!");
-// Diagonal Y Winner
-  } else if ( ($('#1').text() === "Y" && $('#5').text() === "Y") && ($('#9').text() === "Y") ){
-    alert("Y if the WINNER!");
-  } else if ( ($('#3').text() === "Y" && $('#5').text() === "Y") && ($('#7').text() === "Y") ){
-    alert("Y if the WINNER!");
+ // Horizontal O Winner
+  } else if ( ($('#1').text() === "O" && $('#2').text() === "O") && ($('#3').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+  } else if ( ($('#4').text() === "O" && $('#5').text() === "O") && ($('#6').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+  } else if ( ($('#7').text() === "O" && $('#8').text() === "O") && ($('#9').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+// Vertical O Winner
+  } else if ( ($('#1').text() === "O" && $('#4').text() === "O") && ($('#7').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+  } else if ( ($('#2').text() === "O" && $('#5').text() === "O") && ($('#8').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+  } else if ( ($('#3').text() === "O" && $('#6').text() === "O") && ($('#9').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+// Diagonal O Winner
+  } else if ( ($('#1').text() === "O" && $('#5').text() === "O") && ($('#9').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
+  } else if ( ($('#3').text() === "O" && $('#5').text() === "O") && ($('#7').text() === "O") ){
+    alert("O is the WINNER!");
+   resetBoard();
  };
+
 };
+
