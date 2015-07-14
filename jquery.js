@@ -13,11 +13,14 @@ $(document).ready(function() {
 
   turn = 1;
 
+
   $('td').on('click', function() {
     if (turn % 2 == 0) {
       $(this).text("X");
+      $(this).css('background-color', 'red');
     } else {
       $(this).text("O");
+      $(this).css('background-color', 'red');
   }
 
     // alert(turn);
@@ -25,7 +28,13 @@ $(document).ready(function() {
 
     $(this).off('click')
 
-    checkWinner();
+    if (turn > 9){
+      alert('Stalemate');
+      resetBoard();
+    } else {
+      checkWinner();
+    }
+
 
   });
 
@@ -34,6 +43,7 @@ $(document).ready(function() {
 var resetBoard = function(){
   turn = 1;
   $('td').empty();
+  javascript:history.go(0);
 }
 
 
