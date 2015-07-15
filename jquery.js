@@ -49,62 +49,229 @@ var resetBoard = function(){
 
 
 var checkWinner = function() {
+
  // Horizontal X Winner
+
  if ( ($('#1').text() === "X" && $('#2').text() === "X") && ($('#3').text() === "X") ){
-  alert("X is the WINNER!");
-  resetBoard();
+    $('#4').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#4').text() === "X" && $('#5').text() === "X") && ($('#6').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#7').text() === "X" && $('#8').text() === "X") && ($('#9').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
+    $('#4').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
 // Vertical X Winner
+
   } else if ( ($('#1').text() === "X" && $('#4').text() === "X") && ($('#7').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#2').text() === "X" && $('#5').text() === "X") && ($('#8').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
+    $('#1').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#3').text() === "X" && $('#6').text() === "X") && ($('#9').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
-// Diagonal X Winner
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
+//Diagonal X Winner
+
   } else if ( ($('#1').text() === "X" && $('#5').text() === "X") && ($('#9').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#3').text() === "X" && $('#5').text() === "X") && ($('#7').text() === "X") ){
-    alert("X is the WINNER!");
-   resetBoard();
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("X is the Winner");
+    resetBoard();
+  }, 600);
+
 
  // Horizontal O Winner
+
   } else if ( ($('#1').text() === "O" && $('#2').text() === "O") && ($('#3').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
+    $('#4').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#4').text() === "O" && $('#5').text() === "O") && ($('#6').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#7').text() === "O" && $('#8').text() === "O") && ($('#9').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
-// Vertical O Winner
+    $('#4').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
+//Vertical O Winner
+
   } else if ( ($('#1').text() === "O" && $('#4').text() === "O") && ($('#7').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#2').text() === "O" && $('#5').text() === "O") && ($('#8').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
+    $('#1').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#3').text() === "O" && $('#6').text() === "O") && ($('#9').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
-// Diagonal O Winner
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#5').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
+//Diagonal O Winner
+
   } else if ( ($('#1').text() === "O" && $('#5').text() === "O") && ($('#9').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
+    $('#2').fadeTo(0, 0.4);
+    $('#3').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#7').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+
   } else if ( ($('#3').text() === "O" && $('#5').text() === "O") && ($('#7').text() === "O") ){
-    alert("O is the WINNER!");
-   resetBoard();
- };
+    $('#1').fadeTo(0, 0.4);
+    $('#2').fadeTo(0, 0.4);
+    $('#4').fadeTo(0, 0.4);
+    $('#6').fadeTo(0, 0.4);
+    $('#8').fadeTo(0, 0.4);
+    $('#9').fadeTo(0, 0.4);
+
+  setTimeout(function(){
+    alert("O is the Winner");
+    resetBoard();
+  }, 600);
+ }
+ ;
 
 };
 
